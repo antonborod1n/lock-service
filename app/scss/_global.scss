@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %raleway-400;
+  color: $black;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.container-main {
+  max-width: 1652px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 992px) {
+    padding: 0 78px;
+  }
+
+  @media (max-width: 568px) {
+    padding: 0 27px;
+  }
+  @media (max-width: 375px) {
+    padding: 0 15px;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+}

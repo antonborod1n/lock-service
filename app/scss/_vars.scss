@@ -1,0 +1,96 @@
+/* COLOR */
+$accent: #5b00ce;
+$white: #ffffff;
+$black: #000000;
+$red: #ef0000;
+$bg: #d8e2f0;
+$grey: #404346;
+$lightGrey: #9fa5ad;
+
+/* FONTS */
+%raleway-700 {
+  font-family: 'Raleway-Bold';
+  font-weight: 700;
+}
+%raleway-500 {
+  font-family: 'Raleway-Medium';
+  font-weight: 500;
+}
+%raleway-400 {
+  font-family: 'Raleway-Regular';
+  font-weight: 400;
+}
+%raleway-800 {
+  font-family: 'Raleway-ExtraBold';
+  font-weight: 800;
+}
+%raleway-600 {
+  font-family: 'Raleway-SemiBold';
+  font-weight: 600;
+}
+%raleway-300 {
+  font-family: 'Raleway-Light';
+  font-weight: 300;
+}
+
+/* BUTTON */
+%btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %raleway-800;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  width: 300px;
+  height: 70px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $red;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: lighten($color: $red, $amount: 10%);
+  }
+}
+
+%btnBlack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %raleway-700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.16px;
+  width: 189px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: $black;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: lighten($color: $black, $amount: 20%);
+  }
+}
+
+%h2 {
+  @extend %raleway-700;
+  color: $black;
+  font-size: 45px;
+  line-height: 120%;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+}
+
+%h3 {
+  @extend %raleway-700;
+  color: $black;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+}

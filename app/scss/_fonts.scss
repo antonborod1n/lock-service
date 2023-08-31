@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Raleway-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway-Bold'), url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway-Medium'), url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway-Regular'), url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../fonts/Raleway-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway-ExtraBold'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Raleway-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway-SemiBold'), url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('../fonts/Raleway-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway-Light'), url('../fonts/Raleway-Light.woff2') format('woff2'),
+    url('../fonts/Raleway-Light.woff') format('woff');
+  font-display: swap;
+}
