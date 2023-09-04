@@ -783,5 +783,237 @@
   }
 }
 
+/* UPGRADE */
+
+.upgrade {
+  margin-bottom: 100px;
+}
+.upgrade__inner {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    content: url('../images/icons/zig-zag-line.svg');
+  }
+}
+.upgrade__title {
+  @extend %h2;
+  margin-bottom: 30px;
+}
+.upgrade__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 30px;
+  border: 1px solid $white;
+  background-color: #f4f3ff;
+}
+.upgrade__box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 647px;
+  padding: 118px 0 56px 90px;
+}
+.upgrade__text-accent {
+  @extend %raleway-700;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: -0.3px;
+  color: $accent;
+}
+.upgrade__text-strong {
+  @extend %raleway-600;
+  font-size: 20px;
+  line-height: 130%;
+  span {
+    color: $accent;
+  }
+}
+.upgrade__btn {
+  @extend %btn;
+  background-color: $accent;
+  &:hover {
+    background-color: lighten($color: $accent, $amount: 10%);
+  }
+}
+.upgrade__img {
+  padding: 50px 35px 40px 0;
+}
+
+.decor {
+  position: relative;
+  z-index: 1;
+}
+
+/* STAGE */
+
+.stages {
+  margin-bottom: 120px;
+}
+
+.stages__inner {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 140px;
+}
+.stages__item {
+}
+.stages__title {
+  @extend %h2;
+  margin-bottom: 20px;
+}
+.stages__slogan {
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 45px;
+}
+.stages__btn {
+  @extend %btn;
+}
+.stages__items {
+  display: flex;
+  justify-content: space-between;
+}
+.stages__box {
+  position: relative;
+  width: 190px;
+}
+.stages__cercle {
+  @extend %raleway-500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+  border-radius: 50%;
+  color: $accent;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #c7b0e3;
+  margin-bottom: 10px;
+  &1:after {
+    position: absolute;
+    top: 37px;
+    left: 70px;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e9e3f0;
+  }
+}
+.stages__subtitle {
+  @extend %raleway-600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  margin-bottom: 10px;
+}
+.stages__text {
+  font-size: 16px;
+}
+.stages__tel {
+  @extend %raleway-700;
+  display: block;
+  font-size: 20px;
+  line-height: 140%;
+  color: $black;
+  margin-top: 10px;
+}
+
+/* INFO */
+
+.info {
+  margin-bottom: 60px;
+}
+.info__inner {
+  border-radius: 50px;
+  background-color: #eef0f4;
+}
+.price {
+  padding: 55px 0 47px;
+  border-radius: 50px;
+  background-color: $accent;
+  background-image: url(../images/icons/info-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 73% bottom;
+}
+.price__title {
+  @extend %h2;
+  color: $white;
+  margin-bottom: 31px;
+}
+.price__list {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 34px;
+}
+.price__item {
+  position: relative;
+  border-radius: 20px;
+  background: $white;
+  padding: 60px 36px 21px 30px;
+  &::before {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    content: url('../images/icons/ok-accent.svg');
+  }
+}
+.price__num {
+  @extend %raleway-700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+}
+.price__desc {
+  font-size: 18px;
+  line-height: 130%;
+}
+.price__text {
+  position: relative;
+  @extend %raleway-600;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 110%;
+  color: $white;
+  padding-left: 30px;
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    content: url('../images/icons/important.svg');
+  }
+}
+.faq {
+  padding: 55px 0 50px;
+}
+.faq__title {
+  @extend %h2;
+  margin-bottom: 31px;
+}
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.faq__question {
+  border-radius: 20px;
+  background: $white;
+  padding: 25px 60px 30px 102px;
+}
+.faq__subtitle {
+  @extend %raleway-600;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.faq__text {
+  font-size: 16px;
+  line-height: 130%;
+}
+
 @import 'media';
 /* медиа-запросы */
