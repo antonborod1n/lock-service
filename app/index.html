@@ -26,15 +26,41 @@
               >
             </div>
           </div>
+
           <div class="contact-m">
             <a class="contact__link" href="#">8 (800) 777-05-12</a>
+
             <button class="contact__btn-m" type="button">
               <span>Вызвать&nbsp;</span><span>мастера</span><span>ЗВОНОК</span>
             </button>
           </div>
+
           <nav class="menu">
             <button class="menu__burger"></button>
             <div class="menu__box">
+              <button class="menu__close" type="button"></button>
+              <div class="menu__header">
+                <div class="logo__box">
+                  <a class="logo__link" href="#">
+                    <img class="logo__img" src="./images/logo.svg" alt="Логотип" />
+                  </a>
+                  <div class="logo__text">
+                    <span class="logo__name"
+                      >ЗАМОК<br />
+                      СЕРВИС</span
+                    >
+                  </div>
+                </div>
+
+                <div class="menu__header-contact contact-m">
+                  <a class="menu__header-link contact__tel" href="#">8 (800) 777-05-12</a>
+
+                  <button class="menu__header-btn contact__btn-m" type="button">
+                    <span>Вызвать&nbsp;</span><span>мастера</span><span>ЗВОНОК</span>
+                  </button>
+                </div>
+              </div>
+
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="menu__link" href="#">Этапы работы </a>
@@ -75,12 +101,12 @@
             </h1>
             <ul class="top__list">
               <li class="top__item">
-                Любой<br />
+                Любой<br class="top__mobile-hidden" />
                 сложности
               </li>
-              <li class="top__item">Стоимость озвучим <br />сразу</li>
+              <li class="top__item">Стоимость озвучим <br class="top__mobile-hidden" />сразу</li>
               <li class="top__item">
-                Вскрытие<br />
+                Вскрытие<br class="top__mobile-hidden" />
                 без повреждений
               </li>
             </ul>
@@ -103,10 +129,10 @@
           <div class="about__row">
             <h2 class="about__title">О замок сервис</h2>
             <div class="about__top">
-              <p class="about__text">
-                Вскрытие, замена, установка новых замков? Наши
-                <strong>специалисты будут у вас в течении 30 минут</strong> и полностью решат любую
-                задачу.
+              <p class="about__top-text about__top-text-first">
+                Вскрытие, замена, установка новых замков?<br />
+                Наши <strong>специалисты будут у вас в течении 30 минут</strong> и полностью решат
+                любую задачу.
               </p>
               <div class="about__box">
                 <p class="about__top-text">
@@ -175,6 +201,7 @@
         </div>
       </div>
     </section>
+
     <section class="work">
       <div class="container-main">
         <div class="work__inner">
@@ -216,7 +243,7 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Вскрытие дверей</h3>
+                  <h3 class="service__title service__title-opening">Вскрытие дверей</h3>
                   <p class="service__slogan">
                     Не можете попасть к себе домой? Захлопнулась дверь? Вам просто необходимо
                     вскрыть дверь?
@@ -264,7 +291,9 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Установка и замена замков</h3>
+                  <h3 class="service__title service__title-installation">
+                    Установка и замена замков
+                  </h3>
                   <p class="service__slogan">
                     Старый замок стал заедать? Купили новую дверь и нужно установить замок? Нужно
                     сменить личинку в замке?
@@ -317,7 +346,7 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Вскрытие автомобильных замков</h3>
+                  <h3 class="service__title service__title-auto">Вскрытие автомобильных замков</h3>
                   <p class="service__slogan">
                     Захлопнулась дверь автомобиля? Не открывается с ключа? Сел аккумулятор и замок
                     не работает?
@@ -365,7 +394,7 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Вскрытие гаража</h3>
+                  <h3 class="service__title service__title-garage">Вскрытие гаража</h3>
                   <p class="service__slogan">
                     Старый гаражный замок перестал открываться? Потеряли ключи? Недавно поменяли
                     гаражный замок а он уже заедает?
@@ -411,7 +440,7 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Вскрытие сейфов</h3>
+                  <h3 class="service__title service__title-safe">Вскрытие сейфов</h3>
                   <p class="service__slogan">
                     Забыли код от сейфа? Потеряли ключи от офисного сейфа? Никогда не подходивший
                     сейф вдруг перестал открываться?
@@ -441,7 +470,7 @@
                   </div>
                 </div>
                 <div class="service__content">
-                  <h3 class="service__title">Ремонт замков</h3>
+                  <h3 class="service__title service__title-repair">Ремонт замков</h3>
                   <p class="service__slogan">
                     Что делать если менять замок нет возможности или поломка незначительная?
                   </p>

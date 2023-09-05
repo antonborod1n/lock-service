@@ -1,17 +1,24 @@
-import Swiper from 'swiper';
+/* import Swiper from 'swiper'; */
 
 window.addEventListener('DOMContentLoaded', function () {
   const menuBurger = document.querySelector('.menu__burger');
+  const menuClose = document.querySelector('.menu__close');
   const menuBox = document.querySelector('.menu__box');
 
-  console.log(menuBurger);
-
   menuBurger.addEventListener('click', function () {
-    menuBox.classList.toggle('active');
+    menuBox.classList.add('active');
+    menuBurger.style.display = 'none';
+    document.body.style.overflow = 'hidden';
+  });
+
+  menuClose.addEventListener('click', function () {
+    menuBox.classList.remove('active');
+    menuBurger.style.display = '';
+    document.body.style.overflow = '';
   });
 });
 
-const swiper = new Swiper('.swiper', {
+/* const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
@@ -31,4 +38,4 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-});
+}); */

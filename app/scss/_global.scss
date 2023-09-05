@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   @extend %raleway-400;
+  font-variant-numeric: lining-nums proportional-nums;
   color: $black;
   font-size: 18px;
   line-height: 130%;
@@ -24,7 +25,8 @@ body {
   @media (max-width: 568px) {
     padding: 0 27px;
   }
-  @media (max-width: 375px) {
+
+  @media (max-width: 374px) {
     padding: 0 15px;
   }
 }
@@ -33,6 +35,18 @@ body {
   max-width: 1320px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (max-width: 992px) {
+    padding: 0 72px;
+  }
+
+  @media (max-width: 568px) {
+    padding: 0 27px;
+  }
+
+  @media (max-width: 374px) {
+    padding: 0 15px;
+  }
 }
 
 .main {
