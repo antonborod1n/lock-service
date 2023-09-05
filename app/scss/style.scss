@@ -1015,5 +1015,240 @@
   line-height: 130%;
 }
 
+/* GALLERY */
+
+.galery {
+  .galery__title {
+    @extend %h2;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #575757;
+  }
+}
+
+/* LOCATION */
+
+.location {
+  &__inner {
+    height: 897px;
+    background-image: url('../images/map-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 0 188px 0;
+}
+.map__item {
+  position: relative;
+}
+.map__title {
+  @extend %h3;
+  margin-bottom: 20px;
+}
+.map__text {
+  max-width: 595px;
+  margin-bottom: 43px;
+}
+.map__slogan {
+  position: relative;
+  @extend %raleway-500;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 40px;
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: url('../images/icons/ok-accent2.svg');
+  }
+}
+.map__box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.map__num {
+  @extend %raleway-700;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $accent;
+}
+.map__desc {
+  @extend %raleway-500;
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 317px;
+}
+.map__circle {
+  position: absolute;
+  bottom: -90px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  width: 236px;
+  height: 236px;
+  background-color: $accent;
+  border-radius: 50%;
+}
+.map__circle-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 35px;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    content: url('../images/icons/important2.svg');
+  }
+}
+.map__circle-desc {
+  @extend %raleway-700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+}
+.map__circle-num {
+  @extend %raleway-700;
+  color: #bd8ef8;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.16px;
+}
+
+/* REVIEWS */
+
+.reviews {
+  margin: -75px 0 50px 0;
+}
+.reviews__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 61px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.reviews__item {
+  max-width: 321px;
+}
+.reviews__items {
+  display: flex;
+  gap: 30px;
+}
+.reviews__title {
+  @extend %h2;
+  margin-bottom: 20px;
+}
+.reviews__box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 35px 0;
+}
+.reviews__num {
+  @extend %raleway-600;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 30px;
+  line-height: 120%;
+}
+.reviews__desc {
+  max-width: 162px;
+  font-size: 14px;
+  line-height: 110%;
+  color: $grey;
+}
+.reviews__text {
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 17px;
+}
+.reviews__more {
+  @extend %raleway-600;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+/* CONTACT */
+
+.order {
+  padding-bottom: 50px;
+}
+
+.order__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__slogan {
+  position: relative;
+  @extend %raleway-600;
+  max-width: 700px;
+  font-size: 33px;
+  line-height: 120%;
+  padding-left: 73px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: url('../images/icons/phone.svg');
+  }
+
+  span {
+    color: $accent;
+  }
+}
+
+.order__box {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.order__desc {
+  position: relative;
+  @extend %raleway-500;
+  font-size: 12px;
+  line-height: 100%;
+  padding-left: 42px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    left: 0;
+    content: url('../images/icons/around-clock2.svg');
+  }
+}
+
+.order__link {
+  @extend %raleway-600;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 30px;
+  line-height: 140%;
+  color: $black;
+  border-bottom: 1px solid $black;
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: lighten($color: $black, $amount: 20%);
+  }
+}
+
 @import 'media';
 /* медиа-запросы */
