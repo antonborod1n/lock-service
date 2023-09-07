@@ -651,15 +651,16 @@
               </p>
             </div>
           </div>
+
           <div class="faq">
             <div class="container">
               <h2 class="faq__title">Ответы на вопросы</h2>
               <div class="faq__content">
                 <div class="faq__question">
-                  <div class="faq__subtitle">
+                  <div class="faq__subtitle active">
                     Мастер приедет с замками или нужно их покупать заранее?
                   </div>
-                  <p class="faq__text">
+                  <p class="faq__text active">
                     Покупать замок заранее не надо. У наших мастеров всегда в наличии самые
                     популярные замочные системы и комплектующие по ценам на уровне замочных
                     магазинов в вашем городе. Если у вас уникальная и редкая замочная система, то
@@ -888,6 +889,43 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup1">
+      <div class="popup__inner popup__order">
+        <button class="popup__close"></button>
+        <div class="popup__title">Оставить заявку</div>
+        <div class="popup__slogan">
+          В самое ближайшее время мы ответим. Заполните пожалуйста форму
+        </div>
+        <form class="popup__form" action="#">
+          <label class="popup__label popup__phone">
+            <span class="popup__name">Номер телефона</span>
+            <input class="popup__input" type="tel" placeholder="+7" />
+            <span class="popup__error">пожалуйста укажите корреткно</span>
+          </label>
+
+          <button class="popup__btn" type="submit">Оставить заявку</button>
+
+          <label class="popup__label popup__label-accept" for="checkbox">
+            <input class="popup__checkbox" type="checkbox" id="checkbox" />
+            <span class="popup__text-accept"
+              >Отправляя запрос вы соглашаетесь на обработку персональных данных</span
+            >
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup2">
+      <div class="popup__inner popup__completed">
+        <button class="popup__close"></button>
+        <div class="popup__title popup__completed-title">Спасибо!</div>
+        <div class="popup__slogan popup__completed-slogan">
+          Ваша заявка успешно отправлена! В ближайшее время мы свяжемся с Вами
+        </div>
+        <button class="popup__completed-btn">Закрыть окно</button>
+      </div>
+    </div>
 
     <script src="js/main.min.js"></script>
   </body>

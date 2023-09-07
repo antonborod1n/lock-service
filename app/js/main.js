@@ -18,6 +18,56 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function accardion(tiggerSelector) {
+  const btns = document.querySelectorAll(tiggerSelector);
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      this.classList.toggle('active');
+      this.nextElementSibling.classList.toggle('active');
+
+      if (this.classList.contains('active')) {
+        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + 'px';
+      } else {
+        this.nextElementSibling.style.maxHeight = '0px';
+      }
+    });
+  });
+
+  /*   blocks.forEach((block) => {
+    block.classList.add('fadain');
+  });
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      if (!this.classList.contains('active')) {
+        btns.forEach((item) => {
+          item.classList.remove('active');
+        });
+        this.classList.add('active');
+      }
+    });
+  }); */
+}
+
+accardion('.faq__subtitle');
+accardion('.service__title');
+
+const topBtn = document.querySelector('.top__btn');
+const orderPopup = document.querySelector('.popup1');
+const completedPopup = document.querySelector('.popup2');
+const closePopup = orderPopup.querySelector('.popup__close');
+
+topBtn.addEventListener('click', function () {
+  orderPopup.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+closePopup.addEventListener('click', function () {
+  orderPopup.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
 /* const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'vertical',
