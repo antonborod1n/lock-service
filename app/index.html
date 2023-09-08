@@ -101,12 +101,12 @@
             </h1>
             <ul class="top__list">
               <li class="top__item">
-                Любой<br class="top__mobile-hidden" />
+                Любой<br class="mobile-hidden" />
                 сложности
               </li>
-              <li class="top__item">Стоимость озвучим <br class="top__mobile-hidden" />сразу</li>
+              <li class="top__item">Стоимость озвучим <br class="mobile-hidden" />сразу</li>
               <li class="top__item">
-                Вскрытие<br class="top__mobile-hidden" />
+                Вскрытие<br class="mobile-hidden" />
                 без повреждений
               </li>
             </ul>
@@ -709,32 +709,64 @@
       </div>
     </section>
 
-    <!--      <section class="galery">
+    <section class="galery">
       <div class="container">
         <h2 class="galery__title">Примеры наших работ</h2>
       </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/gallery/1.jpg" alt="Слайдер" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/gallery/2.jpg" alt="Слайдер" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/gallery/3.jpg" alt="Слайдер" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/gallery/4.jpg" alt="Слайдер" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/gallery/5.jpg" alt="Слайдер" />
+
+      <div class="itc-slider" data-slider="itc-slider" data-loop="false">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/1.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/2.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/3.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/4.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/5.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/1.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/2.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/3.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/4.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/5.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/1.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/2.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/3.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/4.jpg" alt="Слайдер" />
+            </div>
+            <div class="itc-slider__item">
+              <img class="galery__img" src="./images/gallery/5.jpg" alt="Слайдер" />
+            </div>
           </div>
         </div>
-        <div class="container">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+
+        <button class="itc-slider__btn itc-slider__btn_prev"></button>
+        <button class="itc-slider__btn itc-slider__btn_next"></button>
       </div>
     </section>
 
@@ -743,7 +775,7 @@
         <div class="location__inner">
           <div class="container">
             <div class="map">
-              <div class="map__item">
+              <div class="map__top">
                 <h3 class="map__title">
                   Работаем<br />
                   по всей России
@@ -753,10 +785,14 @@
                   готовы помочь и сделать все возможное, чтобы решить вашу проблему быстро и
                   качественно.
                 </p>
+              </div>
+
+              <div class="map__bottom">
                 <div class="map__slogan">
                   Сертифицированные<br />
                   профессионалы своего дела
                 </div>
+
                 <div class="map__box">
                   <span class="map__num">230+</span>
                   <span class="map__desc"
@@ -766,7 +802,12 @@
               </div>
 
               <div class="map__item">
-                <img src="./images/map-content.png" alt="Карта" />
+                <picture class="map__picture">
+                  <source srcset="./images/map-content.png" media="(min-width: 992px)" />
+                  <source srcset="./images/map-content-t.png" media="(min-width: 568px)" />
+                  <img class="map__img" src="./images/map-content-m.png" alt="Карта" />
+                </picture>
+
                 <div class="map__circle">
                   <div class="map__circle-box">
                     <span class="map__circle-desc"
@@ -787,14 +828,19 @@
       <div class="container">
         <div class="reviews__inner">
           <div class="reviews__item">
-            <img src="./images/icons/stars.svg" alt="Звездный рейтинг" />
-            <div class="reviews__box">
-              <span class="reviews__num">4.9</span>
-              <span class="reviews__desc">средняя оценка нашей услуги</span>
-            </div>
+            <div class="reviews__item-box">
+              <picture>
+                <source srcset="./images/icons/stars.svg" media="(min-width: 568px)" />
+                <img src="./images/icons/stars-m.svg" alt="Звездный рейтинг" />
+              </picture>
 
+              <div class="reviews__box">
+                <span class="reviews__num">4.9</span>
+                <span class="reviews__desc">средняя оценка нашей услуги</span>
+              </div>
+            </div>
             <h2 class="reviews__title">
-              Отзывы<br />
+              Отзывы<br class="mobile-hidden" />
               клиентов
             </h2>
             <div class="reviews__text">
@@ -804,13 +850,41 @@
           </div>
 
           <div class="reviews__items">
-            <img src="./images/shorts.png" alt="" />
-            <img src="./images/shorts.png" alt="" />
-            <img src="./images/shorts.png" alt="" />
+            <div class="reviews__shorts-box">
+              <iframe
+                class="reviews__shorts"
+                src="https://www.youtube.com/embed/anAk_qxN3wo"
+                title="Эффектное появление Никиты Нагорного🥇#фксахалинец #михаиллитвин #никитанагорный #гимнаст #мфл2тур"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="reviews__shorts-box">
+              <iframe
+                class="reviews__shorts"
+                src="https://www.youtube.com/embed/Ma0eQDZJUyg"
+                title="Dante #art #calligraphy #satisfying #anxiety"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="reviews__shorts-box">
+              <iframe
+                class="reviews__shorts"
+                src="https://www.youtube.com/embed/X8RVXzcW1gE"
+                title="Joe Gibbs Racing crew quick with it!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </section>  -->
+    </section>
 
     <section class="order">
       <div class="container">
@@ -927,6 +1001,7 @@
       </div>
     </div>
 
+    <script src="js/itc-slider.min.js" defer></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
