@@ -51,18 +51,32 @@ window.addEventListener('DOMContentLoaded', function () {
   accardion('.faq__subtitle');
   accardion('.service__title');
 
-  const topBtn = document.querySelector('.top__btn');
-  const orderPopup = document.querySelector('.popup1');
-  const completedPopup = document.querySelector('.popup2');
-  const closePopup = orderPopup.querySelector('.popup__close');
+  function modal() {
+    const btns = document.querySelectorAll('.js-modal');
+    const modal = document.querySelector('.popup1');
+    const completedPopup = document.querySelector('.popup2');
+    const close = document.querySelector('.popup__close');
 
-  topBtn.addEventListener('click', function () {
-    orderPopup.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  });
+    console.log(btns);
 
-  closePopup.addEventListener('click', function () {
-    orderPopup.classList.remove('active');
-    document.body.style.overflow = '';
-  });
+    btns.forEach((item) => {
+      item.addEventListener('click', function () {
+        modal.classList.add('active');
+        /*  document.body.style.overflow = 'hidden'; */
+      });
+    });
+
+    close.addEventListener('click', function () {
+      modal.classList.remove('active');
+      /* document.body.style.overflow = ''; */
+    });
+
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+  }
+
+  modal();
 });

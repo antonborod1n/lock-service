@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   @extend %raleway-400;
   font-variant-numeric: lining-nums proportional-nums;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: $black;
   font-size: 18px;
   line-height: 130%;
